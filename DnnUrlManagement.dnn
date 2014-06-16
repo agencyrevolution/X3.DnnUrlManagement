@@ -1,0 +1,75 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages><package name="X3.DnnUrlManagement" type="Module" version="14.1.31">
+  <friendlyName>X3.DnnUrlManagement</friendlyName>
+  <description />
+  <iconFile />
+  <owner>
+    <name>X3 Technology</name>
+    <organization>X3 Technology</organization>
+    <url>http://www.x3technology.com</url>
+    <email>jmathis@x3technology.com</email>
+  </owner>
+  <license>Same license as DNN.</license>
+  <releaseNotes>v. 13.8.14
+Initial version
+
+v. 13.8.24
+Fix minor typos
+Add link to AUM wiki
+
+v. 14.1.31
+Fixed a null reference error</releaseNotes>
+  <components>
+    <component type="Module">
+      <desktopModule>
+        <moduleName>X3.DnnUrlManagement</moduleName>
+        <foldername>X3.DnnUrlManagement</foldername>
+        <businessControllerClass />
+        <supportedFeatures />
+        <moduleDefinitions>
+          <moduleDefinition>
+            <friendlyName>X3.DnnUrlManagement.Portal</friendlyName>
+            <definitionName>X3.DnnUrlManagement.Portal</definitionName>
+            <defaultCacheTime>0</defaultCacheTime>
+            <moduleControls>
+              <moduleControl>
+                <controlKey />
+                <controlSrc>DesktopModules/X3.DnnUrlManagement/PortalEdit.ascx</controlSrc>
+                <supportsPartialRendering>False</supportsPartialRendering>
+                <controlTitle />
+                <controlType>Admin</controlType>
+                <iconFile />
+                <helpUrl />
+                <supportsPopUps>False</supportsPopUps>
+              </moduleControl>
+            </moduleControls>
+          </moduleDefinition>
+        </moduleDefinitions>
+      </desktopModule>
+    </component>
+    <component type="Assembly">
+      <assemblies>
+        <basePath>bin</basePath>
+        <assembly>
+          <name>X3.DnnUrlManagement.dll</name>
+        </assembly>
+      </assemblies>
+    </component>
+    <component type="File">
+      <files>
+        <basePath>DesktopModules\X3.DnnUrlManagement</basePath>
+        <file>
+          <name>module.css</name>
+        </file>
+        <file>
+          <name>PortalEdit.ascx</name>
+        </file>
+        <file>
+          <path>scripts</path>
+          <name>setupModule.js</name>
+        </file>
+      </files>
+    </component>
+  </components>
+</package></packages>
+</dotnetnuke>
